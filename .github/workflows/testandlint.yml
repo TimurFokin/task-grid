@@ -26,10 +26,10 @@ jobs:
                       ${{ runner.os }}-
 
             - name: Prepare
-              run: npm ci
+              run: npm install
 
             - name: Install Playwright Browsers
-              run: npx playwright install --with-deps
+              run: npx playwright install --with-deps chromium
 
             - name: Test
               run: npx playwright test
