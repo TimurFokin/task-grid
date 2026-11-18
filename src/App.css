@@ -4,3 +4,24 @@ body,
     height: 100%;
     margin: 0;
 }
+/* Стили для контейнера */
+.grid-container {
+    width: 700px;
+    height: 400px;
+    display: grid; /* Включаем грид */
+    gap: 20px; /* Отступы между элементами */
+
+    /* Два столбца одинаковой ширины */
+    grid-template-columns: 1fr 1fr;
+
+    /* Три строки: первая и третья делят остаток поровну (1fr), вторая фиксирована (200px) */
+    grid-template-rows: 1fr 200px 1fr;
+
+    background-color: #f0f0f0; /* Фон для наглядности (можно убрать) */
+    box-sizing: border-box;
+}
+
+/* Стили для самих элементов */
+.grid-container div {
+    background-color: #daa520; /* Цвет элементов */
+}
